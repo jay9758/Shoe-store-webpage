@@ -15,7 +15,9 @@ Welcome to the **Shoe Store Webpage**! 🛍️ This is a modern and user-friendl
 🔹 **React JS** - For building a dynamic UI  
 🔹 **JavaScript** - Core logic and interactivity  
 🔹 **CSS** - Styling for a sleek design  
+🔹 **Vercel** - The platform used for deployment and hosting  
 
 ## 🌐 Live Demo
 
-Check out the live version of the homepage on Vercel: [Clothing Brand Homepage](https://clothing-landing-page-alpha.vercel.app/)
+Check out the live version of the webpage on Vercel:  
+🔗 [Shoe Store Webpage](https://shoe-store-webpage-gkxewlx22-jay9758s-projects.vercel.app/)
