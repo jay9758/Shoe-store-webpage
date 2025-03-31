@@ -1,0 +1,171 @@
+/* .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20rem;
+    margin-top: 2rem;
+    z-index: -2;
+}
+
+.card{
+    margin: 20px;
+    border: 2px solid #ededed;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.card-img{
+    width: 13rem;
+    margin-bottom: 1rem;
+}
+
+.card-title{
+    margin-bottom: 1rem;
+}
+
+.card-reviews{
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+.ratings-star{
+    color: #d5ab55;
+}
+
+.total-reviews{
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+.card-price{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bag-icon{
+    color: #535353;
+} */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align cards */
+    margin-left: 18rem; /* Adjusted for better layout */
+    margin-top: 2rem;
+    gap: 20px; /* Adds space between cards */
+}
+
+.card {
+    width: 250px; /* Defined width */
+    background: white;
+    border-radius: 12px; /* Smooth rounded edges */
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.card-img {
+    width: 100%; /* Ensures it fits within the card */
+    height: auto; /* Allows the image to keep its aspect ratio */
+    max-height: 180px; /* Prevents excessive height */
+    border-radius: 8px; /* Smooth edges */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .card-img {
+    transform: scale(1.05); /* Adds a zoom effect without distortion */
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.card-reviews {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ratings-star {
+    color: #d5ab55; /* Golden color */
+    font-size: 1.2rem;
+}
+
+.total-reviews {
+    font-size: 0.9rem;
+    margin-left: 10px;
+    color: #555;
+}
+
+.card-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.price del {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+    margin-right: 5px;
+}
+
+.bag {
+    background: #ededed;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.bag-icon {
+    color: #535353;
+    font-size: 1.2rem;
+}
+
+.bag:hover {
+    background: #d23f57;
+}
+
+.bag:hover .bag-icon {
+    color: white;
+}
+
+
+
+@media (max-width: 768px) {
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      margin-left: 15rem;
+      width: calc(100% - 5rem); 
+    }
+    
+    .card {
+      width: 100%;
+    }
+}
+
+
+
